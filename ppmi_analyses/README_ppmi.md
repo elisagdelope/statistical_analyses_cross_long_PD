@@ -8,7 +8,7 @@ Parses phenotype and clinical data from the original clinical dataset from PPMI.
 ##### ppmi_parse_rnaseq.R
 Parses both STAR+FeatureCounts and Salmon transcript counts into format that can be readily used in R for differentially expressed gene discovery. Also does a summarization from transcript level to gene level (which is what was actually used for analysis). Outputs a file with transcript to gene correspondance, several files with quantification info (raw counts, abundance, length, length-scaled TPM) at transcript and gene level (salmon) and gene level quantification for STAR+FC.
 
-#### ppmitx2tx.sh
+##### ppmitx2tx.sh
 Parse transcript names from PPMI data to be compatible with GENECODE transcript IDs.
 
 
