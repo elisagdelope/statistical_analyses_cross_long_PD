@@ -35,7 +35,7 @@ OPTIONS -v "BL" for timepoint-specific analysis
 ### Longitudinal analysis PD/HC
 
 ##### ppmi_deseq_TS.R (-l gene)
-Performs DESEQ analysis on consecutive timepoints (t1 vs t2; t2 vs t3; t3 vs t4) with design = ~ Age + Gender + visit (visit number with Age & Gender as covariates) separately for binary classes. Outputs DESEQ results for each class. Operates at gene and aggregated level!
+Performs DESEQ analysis on consecutive timepoints (t1 vs t2; t2 vs t3; t3 vs t4) with design = ~ Age + Gender + visit (visit number with Age & Gender as covariates) separately for binary classes. Outputs DESEQ results for each class. 
 
 ##### ppmi_deseq_TS_consistent_trend.R
 Filters genes with consistent sign of foldchange across all the consecutive DEAs for each class separately, and subsets identified class 1-specific (e.g. PD-specific) genes with consistent sign of foldchange across all the consecutive DEAs. Outputs results of DEAs of those genes with consistent trend across all DEAs on consecutive timepoints that are specific of class 1 (e.g. PD).
@@ -57,3 +57,16 @@ Performs deseq2 time course analysis from raw counts and generates some visuals 
 
 ##### ppmi_DEGs_perTS.R
 Computes DESEQ DEAs PD-HC for each timepoint at gene level, then filters those common to all timepoints.
+
+##### ppmi_deseq_TS_pathway_level.R
+Performs DESEQ analysis on expression at aggregated levels (CORUM, GOCC, GOBP) from consecutive timepoints (t1 vs t2; t2 vs t3; t3 vs t4) with design = ~ Age + Gender + visit (visit number with Age & Gender as covariates) separately for binary classes. Outputs DESEQ results for each class.
+
+##### ppmi_deseq_TS_consistent_trend_pathway_level.R
+Filters pathways/protein complexes/cellular locations whose aggregated expression has consistent sign of foldchange across all the Bayesian Moderated t-statistics on consecutive timepoints. Outputs results of the Bayesian Moderated t-statistics of those aggregations with consistent trend across all Bayesian Moderated t-statistics on consecutive timepoints.
+
+##### ppmi_deseqTC_pathway_level.R
+Performs time course deseq2-normalization DEA (time + age + gender as covariates) on expression at aggregated levels (CORUM, GOCC, GOBP) 
+
+##### ppmi_DEGs_perTS_deseq_pathway_level.R
+Computes deseq2-normalization - DEAs PD-HC for each timepoint at aggregated levels, then filters those common to all timepoints
+
