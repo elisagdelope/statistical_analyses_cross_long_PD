@@ -49,7 +49,7 @@ Performs (deseq) linear model to test for association between expression & time 
 ##### ppmi_boxplots_BL.R
 Generates some visuals (boxplots) from file of genes from DEAs anaysis at baseline time.
 
-##### ppmi_boxplots_BL.R
+##### ppmi_boxplots_TS.R
 Generates some visuals (boxplots, trajectories) from file of genes from consecutive DEAs anaysis or from association with time.
 
 ##### ppmi_deseqTC.R
