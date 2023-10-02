@@ -1,4 +1,4 @@
-## ppmi_parse_clinical.R
+##### ppmi_parse_clinical.R
 Parses phenotype and clinical data from the original clinical dataset from PPMI. Outputs ppmi_raw_pheno.tsv, which contains the whole original dataset, and ppmi_pheno.tsv, which contains a reduced set of relevant clinical features for PD.
 
 
