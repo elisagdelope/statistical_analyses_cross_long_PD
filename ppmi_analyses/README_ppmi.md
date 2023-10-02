@@ -34,13 +34,6 @@ OPTIONS -v "BL" for timepoint-specific analysis
 
 ### Longitudinal analysis PD/HC
 
-##### ppmi_generate_pathway_level.R 
-Generates expression data at aggregated level (mean, median, sd, pca) from normalized counts across gene members of cellular pathways: GO BP, GO CC, CORUM + Pathway deregulation scores (pathifier). Outputs aggregated expression for all databases and all aggregated stats.
-
-##### ppmi_deseq_visit_pathway_level.R 
-Performs differential analysis for higher-level functional features on specific timepoint data for diagnosis with Age & Gender as covariates.
-OPTIONS -v "BL" for timepoint-specific analysis
-
 ##### ppmi_filter_gene_expression.R
 Filters low reads from raw gene expression counts. 
 
