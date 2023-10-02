@@ -34,12 +34,6 @@ OPTIONS -v "BL" for timepoint-specific analysis
 
 ### Longitudinal analysis PD/HC
 
-##### ppmi_filter_gene_expression.R
-Filters low reads from raw gene expression counts. 
-
-##### ppmi_norm_gene_expression.R
-Normalizes filtered gene expression counts. 
-
 ##### ppmi_deseq_TS.R (-l gene)
 Performs DESEQ analysis on consecutive timepoints (t1 vs t2; t2 vs t3; t3 vs t4) with design = ~ Age + Gender + visit (visit number with Age & Gender as covariates) separately for binary classes. Outputs DESEQ results for each class. Operates at gene and aggregated level!
 
@@ -50,10 +44,13 @@ Filters genes with consistent sign of foldchange across all the consecutive DEAs
 Performs enrichment analysis on KEGG, GO and MESH databases of genes.
 
 ##### ppmi_corr_TS_deseq.R
-Performs correlation test between expression & time per diagnosis class, filters by significance of corr. test on median of counts, and subsets identified class 1-specific (e.g. PD-specific) genes with significant correlation with time.
+Performs (deseq) linear model to test for association between expression & time per diagnosis class, filters by significance. Test on median of counts, and subsets identified class 1-specific (e.g. PD-specific) genes with significant association with time.
 
-##### test_boxplots.R
-Generates some visuals (boxplots, trajectories) from file of genes from DEAs anaysis.
+##### ppmi_boxplots_BL.R
+Generates some visuals (boxplots) from file of genes from DEAs anaysis at baseline time.
+
+##### ppmi_boxplots_BL.R
+Generates some visuals (boxplots, trajectories) from file of genes from consecutive DEAs anaysis or from association with time.
 
 ##### ppmi_deseqTC.R
 Performs deseq2 time course analysis from raw counts and generates some visuals (plotCounts, heatmap of log2FC).
