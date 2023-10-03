@@ -5,11 +5,11 @@
 * [Requirements](#requirements)
 * [License](#license)
 
-# Introduction
+## Introduction
 This repository contains the code for statistical analyses performed in Chapter 3 of my thesis "Cross-sectional and longitudinal profiling of PD transcriptomics and metabolomics".
 The project consists on whole blood transcriptomics and blood plasma metabolomics cross-sectional and longitudinal profiling of Parkinson's disease patients and controls from the PPMI cohort and  the LuxPARK cohort respectively, to identify differential molecular and higher-level functional features in PD.
 
-# Content
+## Content
 The code covers the following main tasks and analyses:
 
 1. Loading, preparation and processing of datasets
@@ -27,7 +27,11 @@ There is a README.md inside each directory with corresponding explanation for ea
 *luxpark_analyses* contains code related to analysis on metabolomics data from LuxPARK.
 
 
-### Requirements
+## Data
+The public transcriptomics data used in this project was derived from the Parkinson’s Progression Markers Initiative (https://www.ppmi-info.org/, RNAseq - IR3).
+The metabolomics data from LuxPARK is not publicly available as it is linked to the Luxembourg Parkinson’s Study and its internal regulations. Any requests for accessing the dataset can be directed to request.ncer-pd@uni.lu.
+
+## Requirements
 The code was mostly written and tested in R (R 4.0.3) on both current Mac (Ventura) and Linux operating systems (Ubuntu 23.04), relying on multiple R and BioConductor packages that are listed at the beginning of the corresponding R scripts. The code should be compatible with later versions of R installed on current Mac, Linux or Windows systems. R software packages loaded at the beginning of the R scripts must be installed before using the code. R packages available on CRAN can be installed with the command:
 
 install.packages("PACKAGE_NAME")
@@ -40,7 +44,7 @@ if (!require("BiocManager", quietly = TRUE)) {
 
 BiocManager::install("PACKAGE_NAME")
 
-### License
+## License
 TBD
 
 
