@@ -46,7 +46,7 @@ Filters genes with consistent sign of foldchange across all the consecutive DEAs
 Performs enrichment analysis on KEGG, GO and MESH databases of genes.
 
 ##### ppmi_corr_TS_deseq.R
-Performs (deseq) linear model to test for association between expression & time per diagnosis class, filters by significance. Test on median of counts, and subsets identified class 1-specific (e.g. PD-specific) genes with significant association with time.
+Fits a (deseq) linear model to test for association between expression & time per diagnosis class, filters by significance. Test on median of counts, and subsets identified class 1-specific (e.g. PD-specific) genes with significant association with time.
 
 ##### ppmi_boxplots_BL.R
 Generates some visuals (boxplots) from file of genes from DEAs anaysis at baseline time.
@@ -55,7 +55,7 @@ Generates some visuals (boxplots) from file of genes from DEAs anaysis at baseli
 Generates some visuals (boxplots, trajectories) from file of genes from consecutive DEAs anaysis or from association with time.
 
 ##### ppmi_deseqTC.R
-Performs deseq2 time course analysis from raw counts and generates some visuals (plotCounts, heatmap of log2FC).
+Performs deseq2 time course analysis (tests for differential trajectories, whichever the trajectory is) from raw counts and generates some visuals (plotCounts, heatmap of log2FC).
 
 ##### ppmi_DEGs_perTS.R
 Computes DESEQ DEAs PD-HC for each timepoint at gene level, then filters those common to all timepoints.
