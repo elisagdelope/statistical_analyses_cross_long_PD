@@ -1,4 +1,4 @@
-Scripts on data processing and analysis of transcriptomics data from the PPMI cohort. 
+Scripts on data processing and analysis of metabolomics data from the luxPARK cohort. 
 
 ### Parsing data
 
