@@ -11,6 +11,8 @@ Parses both STAR+FeatureCounts and Salmon transcript counts into format that can
 ##### ppmitx2tx.sh
 Parse transcript names from PPMI data to be compatible with GENECODE transcript IDs.
 
+##### ppmi_deseq_salmon_star.R
+Process data and compare the results of performing DESEQ analysis for STAR+featureCounts and Salmon quantification pipelines on all samples (PD/HC with Age & Gender as covariates). 
 
 ### DEA Baseline PD/HC
 
