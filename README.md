@@ -45,6 +45,6 @@ if (!require("BiocManager", quietly = TRUE)) {
 BiocManager::install("PACKAGE_NAME")
 
 ## License
-TBD
+The code is available under the MIT License (see `LICENSE`).
 
 
